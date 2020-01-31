@@ -8,6 +8,8 @@ import (
 	"github.com/tietang/go-eureka-client/eureka"
 )
 
+var eurekaClient *eureka.Client
+
 type EurekaStarter struct {
 	infra.BaseStarter
 	client *eureka.Client
@@ -15,7 +17,11 @@ type EurekaStarter struct {
 
 func (e *EurekaStarter) Init(ctx infra.StarterContext) {
 	e.client = eureka.NewClient(ctx.Props())
+	rpcPort := ctx.Props().GetDefault("application.rpc.port", "8082")
+	e.client.InstanceInfo.Metadata.Map["rpcPort"] = rpcPort
 	e.client.Start()
+	e.client.Applications, _ = e.client.GetApplications()
+	eurekaClient = e.client
 }
 
 func (e *EurekaStarter) Setup(ctx infra.StarterContext) {
