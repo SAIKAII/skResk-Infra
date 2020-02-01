@@ -3,7 +3,7 @@ package httpclient
 import (
 	"bytes"
 	"errors"
-	"github.com/SAIKAII/skReskInfra/lb"
+	"github.com/SAIKAII/skResk-Infra/lb"
 	"io"
 	"io/ioutil"
 	"net/http"

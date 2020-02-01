@@ -2,7 +2,7 @@ package httpclient
 
 import (
 	"fmt"
-	"github.com/SAIKAII/skReskInfra/lb"
+	"github.com/SAIKAII/skResk-Infra/lb"
 	. "github.com/smartystreets/goconvey/convey"
 	"github.com/tietang/go-eureka-client/eureka"
 	"github.com/tietang/props/ini"

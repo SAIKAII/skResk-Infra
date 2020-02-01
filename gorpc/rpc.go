@@ -2,7 +2,7 @@ package gorpc
 
 import (
 	"errors"
-	"github.com/SAIKAII/skReskInfra/lb"
+	"github.com/SAIKAII/skResk-Infra/lb"
 	"github.com/sirupsen/logrus"
 	"net/rpc"
 )

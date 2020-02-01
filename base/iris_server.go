@@ -1,7 +1,7 @@
 package base
 
 import (
-	"github.com/SAIKAII/skReskInfra"
+	"github.com/SAIKAII/skResk-Infra"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/middleware/logger"
 	irisrecover "github.com/kataras/iris/middleware/recover"

@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/SAIKAII/skReskInfra"
+	"github.com/SAIKAII/skResk-Infra"
 )
 
 var rpcServer *rpc.Server

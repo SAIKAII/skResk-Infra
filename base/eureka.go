@@ -3,7 +3,7 @@ package base
 import (
 	"time"
 
-	"github.com/SAIKAII/skReskInfra"
+	"github.com/SAIKAII/skResk-Infra"
 	"github.com/kataras/iris"
 	"github.com/tietang/go-eureka-client/eureka"
 )
@@ -31,7 +31,7 @@ func (e *EurekaStarter) Setup(ctx infra.StarterContext) {
 	Iris().Get("/info", func(ctx iris.Context) {
 		ctx.JSON(info)
 	})
-	Iris().Get("health", func(ctx iris.Context) {
+	Iris().Get("/health", func(ctx iris.Context) {
 		health := eureka.Health{
 			Details: make(map[string]interface{}),
 		}

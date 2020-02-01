@@ -1,4 +1,4 @@
-module github.com/SAIKAII/skReskInfra
+module github.com/SAIKAII/skResk-Infra
 
 go 1.12
 

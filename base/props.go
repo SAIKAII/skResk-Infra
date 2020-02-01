@@ -5,7 +5,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/SAIKAII/skReskInfra"
+	"github.com/SAIKAII/skResk-Infra"
 	"github.com/tietang/props/kvs"
 )
 

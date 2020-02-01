@@ -1,7 +1,7 @@
 package base
 
 import (
-	"github.com/SAIKAII/skReskInfra"
+	"github.com/SAIKAII/skResk-Infra"
 	"github.com/go-playground/locales/zh"
 	"github.com/go-playground/universal-translator"
 	"github.com/sirupsen/logrus"

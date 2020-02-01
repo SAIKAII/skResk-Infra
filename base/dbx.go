@@ -1,7 +1,7 @@
 package base
 
 import (
-	"github.com/SAIKAII/skReskInfra"
+	"github.com/SAIKAII/skResk-Infra"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/tietang/dbx"
 	"github.com/tietang/props/kvs"
