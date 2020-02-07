@@ -1,6 +1,6 @@
 package infra
 
-var apiInitializerRegister *InitializerRegister = new(InitializerRegister)
+var apiInitializerRegister *InitializerRegister = &InitializerRegister{}
 
 // 注册Web API初始化对象
 func RegisterApi(ai Initializer) {

@@ -12,7 +12,7 @@ import (
 )
 
 func TestHttpClient_Do(t *testing.T) {
-	// 创建一个eureka clilent
+	// 创建一个eureka client
 	conf := ini.NewIniFileConfigSource("ec_test.ini")
 	client := eureka.NewClient(conf)
 	client.Start()

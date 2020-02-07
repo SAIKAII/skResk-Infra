@@ -10,6 +10,10 @@ import (
 
 var eurekaClient *eureka.Client
 
+func EurekaClient() *eureka.Client {
+	return eurekaClient
+}
+
 type EurekaStarter struct {
 	infra.BaseStarter
 	client *eureka.Client

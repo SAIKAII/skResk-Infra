@@ -20,6 +20,4 @@ func init() {
 	// 控制台高亮显示
 	formatter.ForceColors = true
 	formatter.DisableColors = false
-	// 日志文件和滚动配置
-	log.Info("测试")
 }
